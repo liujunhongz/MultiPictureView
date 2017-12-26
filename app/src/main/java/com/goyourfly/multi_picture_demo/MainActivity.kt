@@ -3,8 +3,8 @@ package com.goyourfly.multi_picture_demo
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
@@ -18,7 +18,6 @@ import com.goyourfly.multi_picture.ImageLoader
 import com.goyourfly.multi_picture.MultiPictureView
 import com.goyourfly.vincent.Vincent
 import java.util.*
-import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
     val requestCodeAddImage = 1
@@ -89,7 +88,7 @@ class MainActivity : AppCompatActivity() {
             val multiPictureView = view.findViewById(R.id.multi_image_view) as MultiPictureView
 
             init {
-                multiPictureView.itemClickCallback = object :MultiPictureView.ItemClickCallback{
+                multiPictureView.itemClickCallback = object : MultiPictureView.ItemClickCallback{
                     override fun onItemClicked(view: View, index: Int, uris: ArrayList<Uri>) {
                         Toast.makeText(view.context,"PictureClick:$index",Toast.LENGTH_SHORT).show()
                     }

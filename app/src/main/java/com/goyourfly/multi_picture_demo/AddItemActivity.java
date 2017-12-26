@@ -23,7 +23,6 @@ import com.goyourfly.vincent.Vincent;
 import com.zhihu.matisse.Matisse;
 import com.zhihu.matisse.MimeType;
 import com.zhihu.matisse.engine.ImageEngine;
-import com.zhihu.matisse.engine.impl.GlideEngine;
 
 public class AddItemActivity extends AppCompatActivity {
     private static final int REQUEST_ADD_IMAGE = 2;
